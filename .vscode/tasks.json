@@ -1,0 +1,21 @@
+{
+    // ...existing code...
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Java",
+            "type": "shell",
+            "command": "javac *.java",
+            "group": "build",
+            "problemMatcher": ["$javac"]
+        },
+        {
+            "label": "Run Game",
+            "type": "shell",
+            "command": "java Main",
+            "group": "test",
+            "dependsOn": ["Build Java"]
+        }
+    ]
+    // ...existing code...
+}
